@@ -35,7 +35,7 @@
         $smsjchesswin = $_POST['smsj_wins_chess'];
         $chessdraw  = $_POST['draw_chess'];
 
-        $sql = "INSERT INTO `if0_36067277_matches`.`kst_details` (`dt`, `season number`, `season starting data`, `season ending data`, `Total T20 Matches`, `T20 Obs Wins`, `T20 smsj Wins`, `T20 Draws`, `Total Test Matches`, `Test Obs Wins`, `Test Smsj Wins`, `Test Draws`, `Total Chess Matches`, `Chess Obs Wins`, `Chess Smsj Wins`, `chess draw`) VALUES (current_timestamp(), '$seasonnumber', '$seasonstartingdata', '$seasonendingdata', '$totalt20', '$obswint20', '$smsjwinst20', '$t20draw', '$totaltest', '$obstestwin', '$smsjtestwin', '$testdraw', '$totalchess', '$obschesswin', '$smsjchesswin', '$chessdraw')";
+        $sql = "INSERT INTO `if0_36067277_matches`.`kst_details` (`dt`, `season_number`, `season starting data`, `season ending data`, `Total T20 Matches`, `T20 Obs Wins`, `T20 smsj Wins`, `T20 Draws`, `Total_Test_Matches`, `Test Obs Wins`, `Test_Smsj_Wins`, `Test Draws`, `Total Chess Matches`, `Chess Obs Wins`, `Chess Smsj Wins`, `chess draw`) VALUES (current_timestamp(), '$seasonnumber', '$seasonstartingdata', '$seasonendingdata', '$totalt20', '$obswint20', '$smsjwinst20', '$t20draw', '$totaltest', '$obstestwin', '$smsjtestwin', '$testdraw', '$totalchess', '$obschesswin', '$smsjchesswin', '$chessdraw')";
         
         echo $sql;
         
