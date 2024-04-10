@@ -25,7 +25,7 @@ $result = mysqli_query($con, $query);
             $season = $season + 1;
         ?>
         <div class="div">
-           <?php echo "<a href='common.php?i=$season'>Season $season</a>";?>
+           <?php echo "<a href='RETRIVE_INFO/common.php?i=$season'>Season $season</a>";?>
         </div>
         <?php
         }

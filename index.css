@@ -1,22 +1,542 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+
+a{
+    text-decoration: none;
+    color: black;
+}
+span{
+    color: #bc513d
 }
 
-.links{
+.navbar{
     display: flex;
-    flex-direction: column;
-    margin: auto;
-}
-
-.div{
-    height: 20vh;
-    width: 80vw;
-    margin: auto;
-    margin-top: 20px;
-    border: 1px solid black;
-    display: flex;
+    justify-content: space-between;
+    height: 80px;
     align-items: center;
-    justify-content: center;
+    border-bottom: 1px black solid;
+    margin-top: -10px;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
 }
+
+.front{
+    padding-top: 60px;
+}
+.slide{
+    margin-top: 50px;
+}
+
+
+/* for portail less than 1000 width */
+@media(max-width:1000px){
+    .sizenav{
+        display:none;
+    }
+
+    .navbar{
+        height: 80px;
+    }
+
+    .navoption i{
+        display: block;
+        font-size: 6vw;
+        font-weight: 900;
+    }
+
+    .front{
+        flex-direction: column;
+    }
+
+    #written{
+        width: 95vw;
+        height: 30vh;
+        margin-top:22px;
+    }
+
+    .frontpic{
+        width: 95vw;
+        height: 60vh;
+        background-image: url(photo/front1.png);
+        background-size: cover;
+    }
+    #written h1{
+        padding: 5px 5px 0px 10px ;
+        font-size: 7vw;
+        text-transform: capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 0px;
+        line-height: 6vh;
+        font-weight: 800;
+        margin-top: 0px;
+    }
+    
+    #buttomfront{
+        margin-left: 10px;
+        position: relative;
+        top: 3vh;
+        background-color: #bc513d;
+        border: none;
+        padding: 10px 40px; 
+        font-weight: 700;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top:49vh;
+        font-size: 2.5vw;
+    }
+
+    .logo{
+        background-image: url(photo/logo.png);
+        height: 60px;
+        width: 60px;
+        background-size: cover;
+        margin-left: 2.8vw;
+    }
+
+    /* for slide  */
+
+    .mahi{
+        height: 100vh;
+        width: 90vw;
+        display:flex;
+        margin-top: 20px;
+        flex-direction: column;
+        align-self: center;
+        }
+    
+        .mahicontent{
+        width:90vw;
+        height: 50vh;
+        color: black;
+        text-align: center;
+        position: relative;
+        left: 10px;
+        }   
+    
+        .mahicontent h1{
+        font-size:10vw;
+        text-transform: capitalize;
+        font-family: fantasy;
+        font-weight: 500;
+        }
+    
+        .mahicontent h3{
+        font-family: fantasy;
+        font-weight: 100;
+        font-style: italic;
+        font-size: 5vw;
+        margin-top: -20px;
+        }
+    
+        .mahicontent p{
+            display: none;
+        }
+    
+        .mahicontent button{
+        padding: 10px 40px;
+        font-weight: 600;
+        border: none;
+        background-color: #bc513d;
+        font-size: 3.5vw;
+        }
+    
+        .mahipic{
+        width:90vw;
+        height: 50vh;
+        background-image: url(photo/mahi.png);
+        background-size: cover;
+        position: relative;
+        left: 10px;
+        }
+    
+        .virat{
+        height: 100vh;
+        width: 90vw;
+        /* background-color:#0271b1; */
+        display:flex ;
+        flex-direction: column-reverse;
+        margin-top: -40px;
+        position: relative;
+        left: 10px;
+        }   
+    
+        .viratcontent{
+        width:90vw;
+        height:100vh;
+        color: black;
+        text-align: center;
+        }
+    
+        .viratcontent h1{
+            font-size:10vw;
+            text-transform: capitalize;
+            font-family: fantasy;
+            font-weight: 500;
+        }
+    
+        .viratcontent h3{
+            font-family: fantasy;
+            font-weight: 100;
+            font-style: italic;
+            font-size: 5vw;
+            margin-top: -20px;
+        }
+    
+        .viratcontent p{
+            display: none;
+        }
+    
+        .viratcontent button{
+            padding: 10px 40px;
+            font-weight: 600;
+            border: none;
+            background-color: #bc513d;
+            font-size: 3.5vw;
+        }
+    
+        .viratpic{
+        width:90vw;
+        height: 100vh;
+        background-image: url(photo/virat\(1\).png);
+        background-size: cover;
+        position: relative;
+        left:5px;
+        }
+        
+        .rohit{
+        height: calc(100vh - 60px);
+        width: 90vw;
+        /* background-color: #8e2d8d; */
+        display:flex;
+        flex-direction: column;
+        margin-top: -100px;
+        }
+    
+        .rohitcontent{
+        width:90vw;
+        height: 50vh;
+        color: black;
+        text-align: center;
+        position: relative;
+        left: 15px;
+        }
+    
+        .rohitcontent h1{
+            font-size:10vw;
+            text-transform: capitalize;
+            font-family: fantasy;
+            font-weight: 500;
+        }
+    
+        .rohitcontent h3{
+            font-family: fantasy;
+            font-weight: 100;
+            font-style: italic;
+            font-size: 5vw;
+            margin-top: -20px;
+        }
+    
+        .rohitcontent p{
+            display: none;
+        }
+    
+        .rohitcontent button{
+            padding: 10px 40px;
+            font-weight: 600;
+            border: none;
+            background-color: #bc513d;
+            font-size: 3.5vw;
+        }
+    
+        .rohitpic{
+        width:90vw;
+        height: 100vh;
+        background-image: url(photo/rohit.png);
+        background-size: cover;
+        margin:-60px 0px 0px 6vw ;
+        }
+
+        footer{
+            height: 40vh;
+            width: 96vw;
+            background-color: #291F1E;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            font-family:cursive;
+        }
+    
+        footer p{
+            color: white;
+            padding: 0px 20px 0px 20px;
+        }
+    
+}
+
+
+
+.navoption{
+    padding-right:30px;
+    font-size: 1.5vw;
+    display: flex;
+    justify-items: center;
+    gap: 3vw;
+    font-family: monospace;
+    font-weight: 900;
+}
+
+.front{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+
+/* for land scape ( more than 1000px) */
+@media(min-width:1000px){
+    #written{
+        height: 90vh;
+        width: 50%;
+    }
+    
+    #written h1{
+        padding: 10px 30px 10px 50px ;
+        font-size: 4vw;
+        text-transform: capitalize;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+    
+    
+    .frontpic{
+        background-image: url(photo/front1.png);
+        height: 90vh;
+        width: 50%;
+        background-size: cover;
+    }
+
+    .logo{
+        background-image: url(photo/logo.png);
+        height: 70px;
+        width: 70px;
+        background-size: cover;
+        margin-left: 3.2vw;
+    }
+
+    .navbar i{
+        font-size: 2vw;
+        font-weight: 900;
+        margin-right: 2vw;
+    }
+
+    #buttomfront{
+        margin-left:55px;
+        position: relative;
+        top: 0.1vh;
+        font-size: 1.2vw;
+        background-color: #bc513d;
+        border: none;
+        padding: 12px 50px; 
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+             /* for slide of front page */
+
+    .mahi{
+    height: 100vh;
+    width: 100vw;
+    display:flex ;
+    /* background-color: #ab6604; */
+    margin-top: 20px    ;
+    }
+
+    .mahicontent{
+    width:50vw;
+    height: 100vh;
+    color: black;
+    margin-top: 30px;
+    }
+
+    .mahicontent h1{
+    padding: 5px 30px 10px 0px;
+    font-size: 4.2vw;
+    text-transform: capitalize;
+    font-family: fantasy;
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 60px;
+    }
+
+    .mahicontent h3{
+    margin-top: 0px;
+    font-family: fantasy;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.5vw;
+    }
+
+    .mahicontent p{
+    font-family: Georgia;
+    margin: 40px 0px 40px 0px;
+    padding: 5px 30px 5px 0px;
+    font-size:1.4vw;
+    line-height: 30px;
+    font-weight: 500;
+    }
+
+    .mahicontent button{
+    padding: 12px 50px;
+    margin-top: 40px;
+    font-weight: 600;
+    border: none;
+    background-color: #bc513d;
+    font-size: 1.3vw;
+    }
+
+    .mahipic{
+    width:50vw;
+    height: 100vh;
+    background-image: url(photo/mahi.png);
+    background-size: cover;
+    }
+
+    .virat{
+    height: 100vh;
+    width: 100vw;
+    /* background-color:#0271b1; */
+    display:flex ;
+    margin-top: 50px;
+    }   
+
+    .viratcontent{
+    width:50vw;
+    height: 100vh;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    }
+
+    .viratcontent h1{
+    padding: 5px 30px 10px 0px;
+    font-size: 4.2vw;
+    text-transform: capitalize;
+    font-family: fantasy;
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 60px;
+
+    }
+
+    .viratcontent h3{
+    margin-top: 0px;
+    font-family: fantasy;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.2vw;
+    margin-right: 50px;
+    }
+
+    .viratcontent p{
+    font-family: Georgia;
+    margin: 10px 0px 20px 0px;
+    padding: 20px 18px 20px 40px;
+    font-size:1.4vw;
+    line-height: 35px;
+    font-weight: 500;
+    }
+
+    .viratcontent button{
+    padding: 12px 50px;
+    margin-top: 25px;
+    font-weight: 600;
+    border: none;
+    background-color: #bc513d;
+    font-size: 1.3vw;
+    }
+
+    .viratpic{
+    width:50vw;
+    height: 100vh;
+    background-image: url(photo/virat\(1\).png);
+    background-size: cover;
+    }
+    
+    .rohit{
+    height: calc(100vh - 60px);
+    width: 100vw;
+    /* background-color: #8e2d8d; */
+    display:flex ;
+    margin-top: 40px;
+    }
+
+    .rohitcontent{
+    width:50vw;
+    height: 100vh;
+    color: black;
+    margin: 30px 0px 0px 7vw;
+    }
+
+    .rohitcontent h1{
+    padding: 5px 30px 10px 0px;
+    font-size: 4.2vw;
+    text-transform: capitalize;
+    font-family: fantasy;
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 60px;
+    }
+
+    .rohitcontent h3{
+    margin-top: 0px;
+    font-family: fantasy;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.5vw;
+    }
+
+    .rohitcontent p{
+    font-family: Georgia;
+    margin: 0px 0px 20px 0px;
+    padding: 5px 30px 5px 0px;
+    font-size:1.4vw;
+    line-height: 30px;
+    font-weight: 500;
+    }
+
+    .rohitcontent button{
+    padding: 12px 50px;
+    margin-top: 0%;
+    font-weight: 600;
+    border: none;
+    background-color: #bc513d;
+    font-size: 1.3vw;
+    }
+
+    .rohitpic{
+    width:40vw;
+    height: 100vh;
+    background-image: url(photo/rohit.png);
+    background-size: cover;
+    margin:-60px 0px 0px 6vw ;
+    }
+
+    footer{
+        margin-top: 50px;
+        height: 40vh;
+        width: 98vw;
+        background-color: #291F1E;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        font-family:cursive;
+    }
+
+    footer p{
+        color: white;
+    }
+
+}   
+
+ 
