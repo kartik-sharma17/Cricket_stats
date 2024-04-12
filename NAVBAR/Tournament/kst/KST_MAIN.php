@@ -29,7 +29,7 @@ $result = mysqli_query($con, $query);
         <?php
         }
         ?>
-        <button><a href="FORM/FORM_KST.html">Add More Seasons</a></button>
+        <button><a href="LOGIN/LOGIN.html">Add More Seasons</a></button>
     </div>
 </body>
 
