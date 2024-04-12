@@ -1,9 +1,9 @@
 <?php
 
- $servername ='sql211.infinityfree.com';
- $password = 'Kartikbhai123';
- $username = 'if0_36067277';
- $databasename = 'if0_36067277_matches';
+ $servername ='localhost';
+ $password = '';
+ $username = 'root';
+ $databasename = 'form_details';
 
  $con  = mysqli_connect($servername , $username , $password , $databasename);
 

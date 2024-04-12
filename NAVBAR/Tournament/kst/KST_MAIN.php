@@ -1,6 +1,6 @@
 <?php
 
-require_once('config.php');
+require_once('RETRIVE_INFO/config.php');
 $query = "SELECT * FROM `kst_details`;";
 $result = mysqli_query($con, $query);
 
@@ -13,7 +13,6 @@ $result = mysqli_query($con, $query);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fetching Data</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="kstcss.css">
 </head>
 
@@ -25,15 +24,12 @@ $result = mysqli_query($con, $query);
             $season = $season + 1;
         ?>
         <div class="div">
-           <?php echo "<a href='RETRIVE_INFO/common.php?i=$season'>Season $season</a>";?>
+           <?php echo "<a href='RETRIVE_INFO/common.php?i=$season'> <span>Season</span> $season</a>";?>
         </div>
         <?php
         }
         ?>
-    </div>
-    <div class="main">
-     
-     <button><a href="FORM_KST.html">Click To Add More Seasons</a></button>
+        <button><a href="FORM/FORM_KST.html">Add More Seasons</a></button>
     </div>
 </body>
 

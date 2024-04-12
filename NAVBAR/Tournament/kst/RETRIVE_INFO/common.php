@@ -36,10 +36,10 @@ $result3 = mysqli_query($con, $query);
                 <?php
                     while($rows = mysqli_fetch_assoc($result1)){
                     ?>
-                        <td> <?php echo $rows['Total T20 Matches']?></td>
-                        <td> <?php echo $rows['T20 Obs Wins']?></td>
-                        <td> <?php echo $rows['T20 smsj Wins']?></td>
-                        <td> <?php echo $rows['T20 Draws']?></td>
+                        <td> <?php echo $rows['total t20 matches']?></td>
+                        <td> <?php echo $rows['obs t20 wins']?></td>
+                        <td> <?php echo $rows['smsj t20 wins']?></td>
+                        <td> <?php echo $rows['t20 draws']?></td>
                     <?php
                     }
                 ?>
@@ -58,10 +58,10 @@ $result3 = mysqli_query($con, $query);
                 <?php
                     while($rows = mysqli_fetch_assoc($result2)){
                     ?>
-                        <td> <?php echo $rows['Total_Test_Matches']?></td>
-                        <td> <?php echo $rows['Test Obs Wins']?></td>
-                        <td> <?php echo $rows['Test_Smsj_Wins']?></td>
-                        <td> <?php echo $rows['Test Draws']?></td>
+                        <td> <?php echo $rows['total test matches']?></td>
+                        <td> <?php echo $rows['obs test wins']?></td>
+                        <td> <?php echo $rows['smsj test wins']?></td>
+                        <td> <?php echo $rows['test draws']?></td>
                     <?php
                     }
                 ?>
@@ -80,10 +80,10 @@ $result3 = mysqli_query($con, $query);
                 <?php
                     while($rows = mysqli_fetch_assoc($result3)){
                     ?>
-                        <td> <?php echo $rows['Total Chess Matches']?></td>
-                        <td> <?php echo $rows['Chess Obs Wins']?></td>
-                        <td> <?php echo $rows['Chess Smsj Wins']?></td>
-                        <td> <?php echo $rows['chess draw']?></td>
+                        <td> <?php echo $rows['total chess matches']?></td>
+                        <td> <?php echo $rows['obs chess wins']?></td>
+                        <td> <?php echo $rows['smsj chess wins']?></td>
+                        <td> <?php echo $rows['chess draws']?></td>
                     <?php
                     
                     }

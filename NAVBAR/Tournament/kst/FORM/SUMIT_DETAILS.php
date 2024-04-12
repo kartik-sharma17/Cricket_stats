@@ -8,9 +8,13 @@
 </head>
 <body>
     <?php
-        $servername ='sql211.infinityfree.com';
-        $password = 'Kartikbhai123';
-        $username = 'if0_36067277';
+        // $servername ='sql211.infinityfree.com';
+        // $password = 'Kartikbhai123';
+        // $username = 'if0_36067277';
+
+        $servername ='localhost';
+        $password = '';
+        $username = 'root';
 
         $conn = mysqli_connect($servername ,$username ,$password);
 
@@ -35,7 +39,9 @@
         $smsjchesswin = $_POST['smsj_wins_chess'];
         $chessdraw  = $_POST['draw_chess'];
 
-        $sql = "INSERT INTO `if0_36067277_matches`.`kst_details` (`dt`, `season_number`, `season starting data`, `season ending data`, `Total T20 Matches`, `T20 Obs Wins`, `T20 smsj Wins`, `T20 Draws`, `Total_Test_Matches`, `Test Obs Wins`, `Test_Smsj_Wins`, `Test Draws`, `Total Chess Matches`, `Chess Obs Wins`, `Chess Smsj Wins`, `chess draw`) VALUES (current_timestamp(), '$seasonnumber', '$seasonstartingdata', '$seasonendingdata', '$totalt20', '$obswint20', '$smsjwinst20', '$t20draw', '$totaltest', '$obstestwin', '$smsjtestwin', '$testdraw', '$totalchess', '$obschesswin', '$smsjchesswin', '$chessdraw')";
+        // $sql = "INSERT INTO `if0_36067277_matches`.`kst_details` (`dt`, `season_number`, `season starting data`, `season ending data`, `Total T20 Matches`, `T20 Obs Wins`, `T20 smsj Wins`, `T20 Draws`, `Total_Test_Matches`, `Test Obs Wins`, `Test_Smsj_Wins`, `Test Draws`, `Total Chess Matches`, `Chess Obs Wins`, `Chess Smsj Wins`, `chess draw`) VALUES (current_timestamp(), '$seasonnumber', '$seasonstartingdata', '$seasonendingdata', '$totalt20', '$obswint20', '$smsjwinst20', '$t20draw', '$totaltest', '$obstestwin', '$smsjtestwin', '$testdraw', '$totalchess', '$obschesswin', '$smsjchesswin', '$chessdraw')";
+        $sql = "INSERT INTO `form_details`.`kst_details` (`td`, `season_number`, `season starting data`, `season ending data`, `total t20 matches`, `obs t20 wins`, `smsj t20 wins`, `t20 draws`, `total test matches`, `obs test wins`, `smsj test wins`, `test draws`, `total chess matches`, `obs chess wins`, `smsj chess wins`, `chess draws`) VALUES (current_timestamp(), '$seasonnumber', '$seasonstartingdata', '$seasonendingdata', '$totalt20', '$obswint20', '$smsjwinst20', '$t20draw', '$totaltest', '$obstestwin', '$smsjtestwin', '$testdraw', '$totalchess', '$obschesswin', '$smsjchesswin', '$chessdraw')";
+
         
         echo $sql;
         
