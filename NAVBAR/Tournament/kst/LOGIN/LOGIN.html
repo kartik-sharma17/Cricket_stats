@@ -6,22 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="LOGIN.css">
+    <!-- for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&family=Mochiy+Pop+P+One&family=Oswald:wght@200..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
     <div class="main">
-        <h1> login page
+        <h1> Login
         </h1>
             <form method="post" name="form" >
-                <label>Enter ID</label>
+                <label class="lb" id="lbem" for="email">Email ID*</label>
                 <br>
-                <input type="email" id="email" name="email" >
+                <input type="email" id="email" name="email">
                 <br>
-                <label>Enter Password</label>
+                <label class="lb" id="lbpass" for="password">Password*</label>
                 <br>
                 <input type="password" id="password" name="password">
                 <br>
-                <input type="button" value="sumit"  onclick="val()">
+                <div class="remember">
+                    <div class="inner">
+                        <label id="lbremember" for="Remember">Remember me</label>
+                        <input type="checkbox" id="remember" name="Remember">
+                    </div>
+                    <a href="#"> Forget Password</a>
+                </div>
+               
+                <input type="button" id="sumitbtn" value="LOGIN"  onclick="val()">
+                <div class="lst">
+                   <p>Don't Have Account <a href="#">Sign up</a></p>
+                </div>
             </form>
     </div>
 </body>
