@@ -63,15 +63,15 @@ $result4 = mysqli_query($con, $query);
             <tr>
                 <?php
                 while ($rows = mysqli_fetch_assoc($result1)) {
-                    $t20totalmatches = $rows['total t20 matches'];
-                    $obst20 = $rows['obs t20 wins'];
-                    $smsjt20 = $rows['smsj t20 wins'];
-                    $t20draws = $rows['t20 draws'];
+                    $t20totalmatches = $rows['Total T20 Matches'];
+                    $obst20 = $rows['T20 Obs Wins'];
+                    $smsjt20 = $rows['T20 smsj Wins'];
+                    $t20draws = $rows['T20 Draws'];
                 ?>
-                    <td> <?php echo $rows['total t20 matches'] ?></td>
-                    <td> <?php echo $rows['obs t20 wins'] ?></td>
-                    <td> <?php echo $rows['smsj t20 wins'] ?></td>
-                    <td> <?php echo $rows['t20 draws'] ?></td>
+                    <td> <?php echo $rows['Total T20 Matches'] ?></td>
+                    <td> <?php echo $rows['T20 Obs Wins'] ?></td>
+                    <td> <?php echo $rows['T20 smsj Wins'] ?></td>
+                    <td> <?php echo $rows['T20 Draws'] ?></td>
                 <?php
                 }
                 ?>
@@ -93,15 +93,15 @@ $result4 = mysqli_query($con, $query);
             <tr>
                 <?php
                 while ($rows = mysqli_fetch_assoc($result2)) {
-                    $testtotalmatches = $rows['total test matches'];
-                    $obstest = $rows['obs test wins'];
-                    $smsjtest = $rows['smsj test wins'];
-                    $test_draw = $rows['test draws'];
+                    $testtotalmatches = $rows['Total_Test_Matches'];
+                    $obstest = $rows['Test Obs Wins'];
+                    $smsjtest = $rows['Test_Smsj_Wins'];
+                    $test_draw = $rows['Test Draws'];
                 ?>
-                    <td> <?php echo $rows['total test matches'] ?></td>
-                    <td> <?php echo $rows['obs test wins'] ?></td>
-                    <td> <?php echo $rows['smsj test wins'] ?></td>
-                    <td> <?php echo $rows['test draws'] ?></td>
+                    <td> <?php echo $rows['Total_Test_Matches'] ?></td>
+                    <td> <?php echo $rows['Test Obs Wins'] ?></td>
+                    <td> <?php echo $rows['Test_Smsj_Wins'] ?></td>
+                    <td> <?php echo $rows['Test Draws'] ?></td>
                 <?php
                 }
                 ?>
@@ -123,15 +123,15 @@ $result4 = mysqli_query($con, $query);
             <tr>
                 <?php
                 while ($rows = mysqli_fetch_assoc($result3)) {
-                    $chesstotalmatches = $rows['total chess matches'];
-                    $obschess = $rows['obs chess wins'];
-                    $smsjchess = $rows['smsj chess wins'];
-                    $chess_draw = $rows['chess draws'];
+                    $chesstotalmatches = $rows['Total Chess Matches'];
+                    $obschess = $rows['Chess Obs Wins'];
+                    $smsjchess = $rows['Chess Smsj Wins'];
+                    $chess_draw = $rows['chess draw'];
                 ?>
-                    <td> <?php echo $rows['total chess matches'] ?></td>
-                    <td> <?php echo $rows['obs chess wins'] ?></td>
-                    <td> <?php echo $rows['smsj chess wins'] ?></td>
-                    <td> <?php echo $rows['chess draws'] ?></td>
+                    <td> <?php echo $rows['Total Chess Matches'] ?></td>
+                    <td> <?php echo $rows['Chess Obs Wins'] ?></td>
+                    <td> <?php echo $rows['Chess Smsj Wins'] ?></td>
+                    <td> <?php echo $rows['chess draw'] ?></td>
                 <?php
 
                 }

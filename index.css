@@ -27,6 +27,20 @@ span{
 }
 
 
+
+/* for explore button of front content */
+
+.explorebtn{
+    border-radius: 10px;
+    color: white;
+}
+
+.explorebtn:hover{
+    background-color: black;
+
+}
+
+
 /* for portail less than 1000 width */
 @media(max-width:1000px){
     .sizenav{
@@ -339,6 +353,12 @@ span{
         padding: 12px 50px; 
         font-weight: 700;
         text-transform: uppercase;
+        border-radius: 10px;
+        color: white;
+    }
+
+    #buttomfront:hover{
+        background-color: black;
     }
 
              /* for slide of front page */
@@ -467,7 +487,7 @@ span{
     width: 100vw;
     /* background-color: #8e2d8d; */
     display:flex ;
-    margin-top: 40px;
+    margin-top: 80px;
     }
 
     .rohitcontent{
@@ -523,7 +543,7 @@ span{
 
     footer{
         margin-top: 50px;
-        height: 40vh;
+        height: 10vh;
         width: 98vw;
         background-color: #291F1E;
         display: flex;
@@ -535,6 +555,7 @@ span{
 
     footer p{
         color: white;
+        font-size: 0.8vw;
     }
 
 }   
