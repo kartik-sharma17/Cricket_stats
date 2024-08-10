@@ -1,0 +1,156 @@
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-image: url(background.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 150vh;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 50%;
+        background-color: #fff5;
+        backdrop-filter: blur(4px);
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px black;
+    }
+
+    form{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #email , #password{
+        width: 85%;
+        height: 10%;
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+
+
+    .lb{
+        margin-bottom: -20px;
+        margin-left: -260px;
+        font-family: "Teko", sans-serif;
+        font-weight: 400;
+        font-size: 1.5vw;
+    }
+
+
+    #lbem{
+        margin-top: 10px;
+    }
+
+    .remember{
+        width: 80%;
+        height: 10%;
+        /* margin-left: 15px; */
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .remember label{
+        font-family: "Teko", sans-serif;
+        font-weight: 400;
+        font-size: 1.3vw;
+    }
+
+    .main h1{
+        padding: 20px;
+        margin-top: 20px;
+        font-family: "Mochiy Pop P One", sans-serif;
+    font-weight: 400;
+    }
+
+
+    .lst{
+        text-align: right;
+        width: 80%;
+        height: 10%;
+        margin-top: 30px;
+    }
+
+    .lst p ,a{
+        font-family: "Teko", sans-serif;
+        font-weight: 400;
+        font-size: 1.3vw;
+    }
+
+    a{
+        color:#0a3c3e;;
+    }
+
+    #sumitbtn{
+        width: 85%;
+        height: 10%;
+        border-radius: 10px;
+        margin-top: 5px;
+        font-family: "Teko", sans-serif;    
+        font-weight: 500;
+        font-size: 1.5vw;
+        background-color: #0a3c3e;
+        /* background-color: #bc513d; */
+        color: white;
+    }
+
+
+    @media (max-width:1000px){ 
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-image: url(mobile_back.jpg);
+            background-size: cover;
+        }
+        .main{
+            width: 300px;
+            height: 500px;
+        }
+        
+        form{
+            width: 300px;
+            height: 500px;
+        }
+
+        .lb{
+            font-size: 25px;
+            margin-left: 10px;
+        }
+
+        .remember{
+            font-size: 20px;
+        }
+        #lbremember{
+            font-size: 20px;
+        }
+
+        a{
+            font-size: 18px;
+        }
+
+        .lst p{
+            font-size: 18px;
+        }
+
+        #sumitbtn{
+            font-size: 25px;
+        }
+    }
