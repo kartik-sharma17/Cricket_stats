@@ -8,13 +8,13 @@
 </head>
 <body>
     <?php
-        // $servername ='sql211.infinityfree.com';
-        // $password = 'Kartikbhai123';
-        // $username = 'if0_36067277';
+        $servername ='sql211.infinityfree.com';
+        $password = 'Kartikbhai123';
+        $username = 'if0_36067277';
 
-        $servername ='localhost';
-        $password = '';
-        $username = 'root';
+        // $servername ='localhost';
+        // $password = '';
+        // $username = 'root';
 
         $conn = mysqli_connect($servername ,$username ,$password);
 
@@ -35,12 +35,12 @@
         $smsj_mini_win = $_POST['smsj_wins_mini'];
 
         
-        // $sql = "INSERT INTO 'if0_36067277_matches' `t20`(`season`, `season_start_date`, `season_end_date`, `total_matches`, `obs_t20_wins`, `smsj_t20_wins`, `t20_draws`, `total_mini_game`, `obs_mini_wins`, `smsj_mini_wins`) VALUES ('$seasonnumber','$seasonstartingdata','$seasonendingdata','$totalt20','$obswint20','$smsjwinst20','$t20draw','$total_mini','$obs_mini_win','$smsj_mini_win')";
-        // $sql = "INSERT INTO 'form_details'.`t20`(`season`, `season_start_date`, `season_end_date`, `total_matches`, `obs_t20_wins`, `smsj_t20_wins`, `t20_draws`, `total_mini_game`, `obs_mini_wins`, `smsj_mini_wins`) VALUES ('$seasonnumber','$seasonstartingdata','$seasonendingdata','$totalt20','$obswint20','$smsjwinst20','$t20draw','$total_mini','$obs_mini_win','$smsj_mini_win');";
-        $sql ="INSERT INTO `form_details`.`t20`(`season`, `season_start_date`, `season_end_date`, `total_matches`, `obs_t20_wins`, `smsj_t20_wins`, `t20_draws`, `total_mini_game`, `obs_mini_wins`, `smsj_mini_wins`) VALUES ('$seasonnumber','$seasonstartingdata','$seasonendingdata','$totalt20','$obswint20','$smsjwinst20','$t20draw','$total_mini','$obs_mini_win','$smsj_mini_win');";
+       
+        // $sql ="INSERT INTO `form_details`.`t20`(`season`, `season_start_date`, `season_end_date`, `total_matches`, `obs_t20_wins`, `smsj_t20_wins`, `t20_draws`, `total_mini_game`, `obs_mini_wins`, `smsj_mini_wins`) VALUES ('$seasonnumber','$seasonstartingdata','$seasonendingdata','$totalt20','$obswint20','$smsjwinst20','$t20draw','$total_mini','$obs_mini_win','$smsj_mini_win');";
+        $sql ="INSERT INTO `if0_36067277_matches`.`t20`(`season`, `season_start_date`, `season_end_date`, `total_matches`, `obs_t20_wins`, `smsj_t20_wins`, `t20_draws`, `total_mini_game`, `obs_mini_wins`, `smsj_mini_wins`) VALUES ('$seasonnumber','$seasonstartingdata','$seasonendingdata','$totalt20','$obswint20','$smsjwinst20','$t20draw','$total_mini','$obs_mini_win','$smsj_mini_win');";
 
         
-        echo $sql;
+        // echo $sql;
         
         if($conn->query($sql) == true){
             echo "data is succesfully inserted";
